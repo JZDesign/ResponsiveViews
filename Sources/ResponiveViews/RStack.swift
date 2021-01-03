@@ -3,7 +3,7 @@ import SwiftUI
 
 public struct RStack<Content: View> : AccessibleView {
     @Environment(\.sizeCategory) public var size: ContentSizeCategory
-
+    
     let content: () -> Content
     
     public init(@ViewBuilder content: @escaping () -> Content) {
@@ -11,14 +11,13 @@ public struct RStack<Content: View> : AccessibleView {
     }
     
     public var body: some View {
-        VStack {
-            if size.isAccessibilityCategory {
+        if size.isAccessibilityCategory {
+            VStack {
                 content()
-            } else {
-                HStack { content() }
             }
+        } else {
+            HStack { content() }
         }
-        
     }
-    
+
 }
