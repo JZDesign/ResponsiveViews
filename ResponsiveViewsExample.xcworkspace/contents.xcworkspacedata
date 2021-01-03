@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ResponsiveViewsExampleApp/ResponsiveViewsExampleApp.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Sources"
+      name = "Sources">
+      <Group
+         location = "group:ResponiveViews"
+         name = "ResponsiveViews">
+         <FileRef
+            location = "group:/Users/jacob.rakidzich/Documents/GitHub/ResponsiveViews/Sources/ResponiveViews/ResponsiveViews.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Accessibility.swift">
+         </FileRef>
+         <FileRef
+            location = "group:RStack.swift">
+         </FileRef>
+         <FileRef
+            location = "group:RDualText.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Tests"
+      name = "Tests">
+      <FileRef
+         location = "group:LinuxMain.swift">
+      </FileRef>
+      <Group
+         location = "group:ResponiveViewsTests"
+         name = "ResponiveViewsTests">
+         <FileRef
+            location = "group:ResponiveViewsTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:XCTestManifests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
