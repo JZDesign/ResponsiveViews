@@ -11,7 +11,7 @@ import SwiftUI
 struct ResponsiveViewsExampleAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ResponsiveContentView()
         }
     }
 }

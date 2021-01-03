@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        RStack {
+        HStack {
             Image(systemName: "creditcard.fill")
                 .foregroundColor(.red)
-            RDualText(
-                firstText: Text("Joe's Coffee Shop"),
-                secondText: Text("$2.34")
-            )
-            .centerTextIfAccessible()
+                .padding(.trailing)
+            
+            Text("Joe's Coffee Shop")
+            Spacer()
+            Text("$2.34")
         }.padding()
     }
 }
@@ -24,5 +24,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct ResponsiveContentView: View {
+    var body: some View {
+        RStack {
+            Image(systemName: "creditcard.fill")
+                .foregroundColor(.red)
+            RDualText(
+                firstText: Text("Joe's Coffee Shop"),
+                secondText: Text("$2.34")
+            )
+        }.padding()
     }
 }
